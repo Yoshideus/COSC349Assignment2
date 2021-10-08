@@ -17,12 +17,11 @@ if(!isset($_SESSION['username'])){
   exit;
 }
 
-$db_host   = '192.168.2.12';
-$db_name   = 'fvision';
-$db_user   = 'webuser';
-$db_passwd = 'insecure_db_pw';
+$db_host   = 'tictactoedata.ckyvtmldqfco.us-east-1.rds.amazonaws.com';
+$db_name   = 'tictactoe';
+$db_user   = 'admin';
+$db_passwd = 'password123';
 
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $conn = new mysqli($db_host, $db_user , $db_passwd, $db_name);
 
 ?>

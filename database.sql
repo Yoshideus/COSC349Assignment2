@@ -1,8 +1,4 @@
-CREATE TABLE users (
-  username varchar(200) NOT NULL,
-  password varchar(60) NOT NULL,
-  PRIMARY KEY (username)
-);
+CREATE TABLE users (username varchar(200) NOT NULL, password varchar(60) NOT NULL, PRIMARY KEY (username));
 
 CREATE TABLE games (
   gameid int NOT NULL AUTO_INCREMENT,
@@ -40,9 +36,14 @@ INSERT INTO users (username, password) VALUES ("test", "$2y$10$NGS0xQent7N4Up.lY
 INSERT INTO users (username, password) VALUES ("test1", "$2y$10$msnWTFSUEcb.BU.vXZoYtuksgRaPT60lnYVrHoydCL0pEWH1YdQYC");
 INSERT INTO users (username, password) VALUES ("test2", "$2y$10$16DldbKweqtHbQTQ0LB7ReTmm5MUJbr8LPI01n8m0Fa2GoXsQd8Mq");
 
-INSERT INTO stats (username, gamesplayed, wins, draws, loses, score, winrate)
-  VALUES ("test", 80, 40, 30, 10, 150, 0.50);
-INSERT INTO stats (username, gamesplayed, wins, draws, loses, score, winrate)
-  VALUES ("test1", 72, 40, 30, 2, 150, 0.556);
-INSERT INTO stats (username, gamesplayed, wins, draws, loses, score, winrate)
-  VALUES ("test2", 19, 3, 9, 7, 18, 0.158);
+INSERT INTO stats (username, gamesplayed, wins, draws, loses, score, winrate) VALUES ("test", 80, 40, 30, 10, 150, 0.50);
+INSERT INTO stats (username, gamesplayed, wins, draws, loses, score, winrate) VALUES ("test1", 72, 40, 30, 2, 150, 0.556);
+
+<?php
+
+define('DB_SERVER', 'tictactoedata.ckyvtmldqfco.us-east-1.rds.amazonaws.com');
+define('DB_USERNAME', 'admin');
+define('DB_PASSWORD', 'yoshi738');
+define('DB_DATABASE', 'tictactoe');
+
+?>

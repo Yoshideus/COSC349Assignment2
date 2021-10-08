@@ -3,10 +3,10 @@ from array import *
 
 def userreport(user):
     db = mysql.connector.connect(
-      host="192.168.2.12",
-      database="fvision",
-      user="webuser",
-      password="insecure_db_pw"
+      host="tictactoedata.ckyvtmldqfco.us-east-1.rds.amazonaws.com",
+      database="tictactoe",
+      user="admin",
+      password="password123"
     )
 
     dbcursor = db.cursor()
