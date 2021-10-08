@@ -14,7 +14,7 @@ $db_name   = 'tictactoe';
 $db_user   = 'admin';
 $db_passwd = 'password123';
 
-$conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+$conn = new mysqli($db_host, $db_user , $db_passwd, $db_name);
 
 ?>
 <!DOCTYPE html>
@@ -71,13 +71,10 @@ $conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 
     $enter = $conn->prepare($q);
 
+
     $enter->bind_param("s", $_SESSION['username']);
 
-    if ($enter->execute() === TRUE) {
-      echo "success";
-    } else {
-      echo "Error: " . $q . "<br>" . $conn->error . "<br>";
-    }
+    $enter->execute();
 
     $result = $enter->get_result();
 
