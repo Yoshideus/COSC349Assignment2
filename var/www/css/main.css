@@ -1,0 +1,965 @@
+
+/* keeps page as full size of screen/browser */
+body {
+    height: 100%;
+    width: 100%;
+    font-family: monospace;
+    background-image: url(../images/tronbg.jpg);
+    margin: auto;
+    background-size: cover;
+}
+
+header {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 7%;
+  color: white;
+  font-size: 40px;
+  text-shadow: 0px 0px 40px #00FFFF, 0 0 80px #0000FF, 0 0 20px #00FFFF;
+}
+
+header h2 {
+  font-size: 80px;
+  margin-top: 70px;
+  margin-bottom: -30px;
+}
+
+h3 {
+  font-size: 40px;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+p {
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  color: white;
+  font-size: 20px;
+}
+
+.text {
+  text-align: left;
+  margin-left: 320px;
+  margin-right: 320px;
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
+
+.highlight {
+  text-shadow: 0px 0px 40px #00FFFF, 0 0 80px #0000FF, 0 0 20px #00FFFF;
+}
+
+.rules {
+  margin-top: -43px;
+}
+
+.hometitle h1 {
+  font-size: 130px;
+  margin-top: -12px;
+  margin-bottom: 0px;
+  font-weight: 500px;
+}
+
+.indextitle {
+  margin-top: -15px;
+  margin-bottom: -45px;
+  font-size: 130px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.left p {
+  margin-bottom: 0px;
+  margin-top: 0;
+  padding-top: 9px;
+  padding-bottom: 3px;
+}
+
+.left h3 {
+  padding-bottom: 3px;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  margin: 0;
+}
+
+.left h6 {
+  font-size: 22px;
+  color: white;
+  padding-top: 9px;
+  margin: 0;
+}
+
+.right p {
+  padding-top: 9px;
+  margin-bottom: 0;
+  padding-bottom: 3px;
+  margin-top: 0;
+}
+
+.right h3 {
+  padding-bottom: 3px;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  margin: 0;
+}
+
+.right h6 {
+  color: white;
+  padding-top: 9px;
+  font-size: 22px;
+  margin: 0;
+}
+
+.left {
+  text-align: center;
+  border: solid #FF00FF 5px;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  width: 320px;
+  display: inline-block;
+  margin-right: -7px;
+  margin-bottom: 35px;
+}
+
+.right {
+  display: inline-block;
+  text-align: center;
+  border: solid #FF00FF 5px;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  width: 320px;
+  margin-left: -7px;
+}
+
+.statleft {
+  text-align: center;
+  border: solid #00FFFF 5px;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: transparent;
+  width: 320px;
+  display: inline-block;
+}
+
+.statleft p {
+    text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+}
+
+.statright {
+  display: inline-block;
+  text-align: center;
+  border: solid #00FFFF 5px;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: transparent;
+  width: 320px;
+  margin-left: -10px;
+}
+
+.statright p {
+
+}
+
+.container {
+  text-align: center;
+  align-content: center;
+  align-self: center;
+  height: auto;
+  overflow: auto;
+  margin: 0 auto;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  align-content: center;
+  align-self: center;
+}
+
+.logout {
+  background-color: rgba(255, 105, 180, 0.5);
+  color: white;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  float: right;
+  margin-top: -120px;
+  margin-right: 40px;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 20px;
+  border: #00FFFF 4px solid;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #00FFFF);
+}
+
+.logout:hover {
+  background-color: rgba(255, 102, 0, 0.5);
+  color: white;
+  width: 120px;
+  height: 120px;
+  border-radius: 70px;
+  transition: 0.5s;
+  float: right;
+  margin-top: -120px;
+  margin-right: 40px;
+  font-family: monospace;
+  border: #FF00FF 4px solid;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+}
+
+.menu {
+  transition: 0.5s;
+  background-color: rgba(255, 105, 180, 0.5);
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: monospace;
+  outline: none;
+  border: transparent;
+  box-shadow: 0px 0px 3px #FF00FF, 0 0 30px #FF00FF, 0 0 10px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  width: 200px;
+  height: 80px;
+}
+
+.menu:hover {
+  transition: 0.5s;
+  background-color: rgba(255, 105, 180, 0.5);
+  border: transparent;
+  box-shadow: 0px 0px 3px #00FFFF, 0 0 30px #00FFFF, 0 0 10px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+
+.back {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #FF00FF 4px solid;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  float: left;
+  margin-top: 30px;
+  width: 200px;
+  height: 90px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+.back:hover {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #00FFFF 4px solid;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+
+.foward {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #FF00FF 4px solid;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  float: right;
+  margin-top: 15px;
+  width: 200px;
+  height: 90px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.foward:hover {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  border: #00FFFF 4px solid;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+
+.instfoward {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #FF00FF 4px solid;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  float: right;
+  margin-top: -172px;
+  width: 200px;
+  height: 90px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.instfoward:hover {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  border: #00FFFF 4px solid;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+
+.instback {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #FF00FF 4px solid;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  float: left;
+  margin-top: -158px;
+  width: 200px;
+  height: 90px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+.instback:hover {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #00FFFF 4px solid;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+
+.statback {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #FF00FF 4px solid;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  float: left;
+  margin-top: -50px;
+  width: 200px;
+  height: 90px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+.statback:hover {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #00FFFF 4px solid;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+
+.statfoward {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #FF00FF 4px solid;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  float: right;
+  margin-top: -65px;
+  width: 200px;
+  height: 90px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.statfoward:hover {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  border: #00FFFF 4px solid;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+
+.confirm {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #FF00FF 4px solid;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  float: right;
+  margin-top: 25px;
+  width: 200px;
+  height: 90px;
+  margin-right: 60px;
+  margin-bottom: 100px;
+  margin-top: -110px;
+}
+
+.confirm:hover {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  border: #00FFFF 4px solid;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+
+.selectback {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #FF00FF 4px solid;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  float: left;
+  margin-top: -98px;
+  width: 200px;
+  height: 90px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+.selectback:hover {
+  background-color: rgba(255, 105, 180, 0);
+  color: white;
+  transition: 0.5s;
+  font-family: monospace;
+  font-size: 22px;
+  border: #00FFFF 4px solid;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+  float: left;
+  margin-top: -98px;
+  width: 200px;
+  height: 90px;
+  margin-left: 60px;
+  margin-bottom: 70px;
+  vertical-align: bottom;
+}
+
+.stattitle {
+  font-size: 25px;
+}
+
+.board {
+  align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.gameplace {
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0.1), #FF00FF);
+  color: white;
+  font-size: 50px;
+  width: 85px;
+  height: 85px;
+}
+
+.gameplaceB {
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0.1), #00FFFF);
+  color: white;
+  font-size: 50px;
+  width: 80px;
+  height: 80px;
+}
+
+.gameplaceC {
+  box-shadow: 0px 0px 1px #FF00FF, 0 0 10px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0.1), #FF00FF);
+  font-size: 50px;
+  width: 80px;
+  height: 80px;
+}
+
+.move {
+  cursor: pointer;
+}
+
+.topleft {
+  float: left;
+  margin-left: 80px;
+  font-size: 28px;
+}
+
+.topright {
+  float: right;
+  text-align: right;
+  margin-right: 80px;
+  font-size: 28px;
+}
+
+.gametitle {
+  margin-top: 70px;
+}
+
+.game {
+  border: #00FFFF 4px solid;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+  margin-left: 375px;
+  margin-right: 375px;
+  padding-bottom: 30px;
+  margin-top: -15px;
+}
+
+.statright p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-image: radial-gradient(transparent, #00FFFF);
+  font-size: 20px;
+}
+
+.statleft p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-image: radial-gradient(transparent, #00FFFF);
+  font-size: 20px;
+}
+
+.selectright {
+  display: inline-block;
+  text-align: center;
+  border: solid #00FFFF 5px;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: transparent;
+  width: 320px;
+  margin-left: -10px;
+  margin-top: -400px;
+  margin-bottom: 30px;
+}
+
+.selectright p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+  font-size: 20px;
+}
+
+h5 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 10px;l
+  font-size: 28px;
+  color: white;
+}
+
+.statleft h5 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 10px;
+  background-color: transparent;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  font-size: 28px;
+  color: white;
+}
+
+.statright h5 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 10px;
+  background-color: transparent;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0), #FF00FF);
+  font-size: 28px;
+  color: white;
+}
+
+h4 {
+  font-size: 30px;
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+  margin: 0;
+}
+
+.select {
+  align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: -5px;
+  margin-left: -10px;
+  margin-right: -10px;
+  height: 129.5px;
+  overflow-y: auto;
+  border-spacing: 0;
+}
+
+.select td {
+  box-shadow: 0px 0px 1px #00FFFF, 0 0 6px #00FFFF, 0 0 2px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+  width: 160px;
+  height: 40px;
+  color: white;
+}
+
+.select .active {
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+  width: 105px;
+  height: 40px;
+  color: white;
+}
+
+.select td:hover {
+  box-shadow: 0px 0px 1px #FF00FF, 0 0 6px #FF00FF, 0 0 2px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(transparent, #FF00FF);
+}
+
+.select tr:hover > td {
+  box-shadow: 0px 0px 1px #FF00FF, 0 0 6px #FF00FF, 0 0 2px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(transparent, #FF00FF);
+}
+
+.blue {
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+
+.findgame {
+  transition: 0.5s;
+  background-color: rgba(255, 105, 180, 0.5);
+  color: white;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-family: monospace;
+  color: white;
+  outline: none;
+  border: transparent;
+  box-shadow: 0px 0px 2px #00FFFF, 0 0 10px #00FFFF, 0 0 6px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(rgba(0, 255, 255, 0.5), #00FFFF);
+  width: 150px;
+  height: 40px;
+}
+
+.selectright .findgame {
+  margin-bottom: 11.25px;
+}
+
+.findgame:hover {
+  transition: 0.5s;
+  background-color: rgba(255, 105, 180, 0.5);
+  border: transparent;
+  box-shadow: 0px 0px 2px #FF00FF, 0 0 10px #FF00FF, 0 0 6px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(transparent, #FF00FF);
+  color: white;
+}
+
+.homeinput {
+  transition: 0.5s;
+  background-color: rgba(255, 105, 180, 0.5);
+  color: white;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-size: 18px;
+  font-family: monospace;
+  color: white;
+  outline: none;
+  border: transparent;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(rgba(0, 255, 255, 0.3), #00FFFF);
+  width: 150px;
+  height: 40px;
+}
+
+.homeinput:hover {
+  transition: 0.5s;
+  background-color: rgba(255, 105, 180, 0.5);
+  border: transparent;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0.5), #FF00FF);
+  color: white;
+}
+
+.leaderboard {
+  display: inline-block;
+  background-color: transparent;
+  text-align: center;
+  overflow-y: auto;
+  height: 290px;
+  font-size: 14px;
+  border: #00FFFF 3px solid;
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+  color: white;
+  border-spacing: 0;
+}
+
+.leaderboard th {
+  font-size: 25px;
+  width: 150px;
+  background-color: transparent;
+  border: #FF00FF 3px solid;
+  box-shadow: 0px 0px 6px #FF00FF, 0 0 60px #FF00FF, 0 0 20px #FF00FF;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  background-image: radial-gradient(rgba(255, 105, 180, 0.5), #FF00FF);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.leaderboard td {
+  background-color: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 1px #00FFFF, 0 0 6px #00FFFF, 0 0 2px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+
+.login {
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.register {
+  margin-bottom: 15px;
+}
+
+.wintext {
+  align-content: center;
+  text-align: center;
+  margin-top: 200px;
+  font-size: 70px;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  color: white;
+}
+
+/* code below by WILDER TAYPE from https://codepen.io/wilder_taype/pen/pNXwMW *modified* */
+@-webkit-keyframes click-wave {
+  0% {
+    height: 80px;
+    width: 80px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -120px;
+    margin-top: -120px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes click-wave {
+  0% {
+    height: 80px;
+    width: 80px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 300px;
+    width: 300px;
+    margin-left: -120px;
+    margin-top: -120px;
+    opacity: 0;
+  }
+}
+@keyframes click-wave {
+  0% {
+    height: 80px;
+    width: 80px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 300px;
+    width: 300px;
+    margin-left: -120px;
+    margin-top: -120px;
+    opacity: 0;
+  }
+}
+.option-inputX {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-inputX:hover {
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+.option-inputX:checked {
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+.option-inputX:checked::before {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  content: '\2716';
+  display: inline-block;
+  font-size: 35px;
+  text-align: center;
+  line-height: 70px;
+}
+.option-inputX:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #00FFFF;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+.option-inputO {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  text-shadow: 3px 3px 3px #FF00FF, 0 0 40px #FF00FF, 0 0 5px #FF00FF;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-inputO:hover {
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+.option-inputO:checked {
+  box-shadow: 0px 0px 6px #00FFFF, 0 0 60px #00FFFF, 0 0 20px #00FFFF;
+  text-shadow: 3px 3px 3px #00FFFF, 0 0 40px #00FFFF, 0 0 5px #00FFFF;
+  background-image: radial-gradient(transparent, #00FFFF);
+}
+.option-inputO:checked::before {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  font-style: normal;
+  content: '\25cb';
+  display: inline-block;
+  font-size: 35px;
+  text-align: center;
+  line-height: 70px;
+}
+.option-inputO:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #00FFFF;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
