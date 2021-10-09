@@ -163,9 +163,6 @@ $conn = new mysqli($db_host, $db_user , $db_passwd, $db_name);
             }
           }
 
-          // removing added empty line
-          array_pop($score);
-
           // setting secondary counting variable
           $j = 1;
 
