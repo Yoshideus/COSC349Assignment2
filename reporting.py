@@ -1,4 +1,5 @@
-import mysql.connector
+import mysql
+import string
 from array import *
 
 def userreport(user):
@@ -11,7 +12,7 @@ def userreport(user):
 
     dbcursor = db.cursor()
 
-    dbcursor.execute('SELECT username FROM users')
+    dbcursor.execute('SELECT username FROM users WHERE username = %s', user)
 
     result = dbcursor.fetchone()
     if len(result) < 2:
@@ -119,10 +120,10 @@ print("  - 5 to update the reporting database")
 print("  - an empty input to exit application")
 
 while(True):
-    val = str(input("Please enter a number: "))
+    val = str(raw_input("Please enter a number: "))
 
     if val == "1":
-        username = str(input("Please input the username of the user you'd like a report on: "))
+        username = raw_input("Please input the username of the user you'd like a report on: ")
         userreport(username)
         break;
     elif val == "2":
@@ -140,4 +141,4 @@ while(True):
     elif val == "":
         break;
     else:
-        print("That was not a valid input.")
+        print("That was not a valid input. Enter blank line to exit.")
