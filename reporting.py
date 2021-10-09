@@ -1,9 +1,9 @@
-import mysql
+import pymysql
 import string
 from array import *
 
 def userreport(user):
-    db = mysql.connector.connect(
+    db = pymysql.connect(
       host="tictactoedata.ckyvtmldqfco.us-east-1.rds.amazonaws.com",
       database="tictactoe",
       user="admin",
@@ -12,24 +12,21 @@ def userreport(user):
 
     dbcursor = db.cursor()
 
-    dbcursor.execute('SELECT username FROM users WHERE username = %s', user)
+    dbcursor.execute('SELECT * FROM stats WHERE username = %s', user)
 
     result = dbcursor.fetchone()
-    if len(result) < 2:
+
+    print(result)
+
+    if result == None:
         print("User does not exist.")
     else:
+        winrate = result[6]*100
 
-        played = result[1]
-        wins = result[2]
-        draws = result[3]
-        loses = result[4]
-        score = result[5]
-        winrate = result[6]
-
-        print(user+"'s Report:")
-        print(user+" has played "+result[1]+" games; winning "+result[2]+" of them, losing "+result[4]+" of them, and drawing the other "+result[3]+".")
-        print("This makes their current win rate " +(result[6]*100)+"%.")
-        print("With wins, draws, and loses being worth 3, 1, and 0 points respectively, "+user+" is currently on a score of "+results[5]+".")
+        print(str(user)+"'s User Report:")
+        print(str(user)+" has played "+str(result[1])+" games; winning "+str(result[2])+" of them, losing "+str(result[4])+" of them, and drawing the other "+str(result[3])+".")
+        print("This makes their current win rate " +str(winrate)+"%.")
+        print("With wins, draws, and loses being worth 3, 1, and 0 points respectively, "+str(user)+" is currently on a score of "+str(result[5])+".")
 
 def lbreport():
     db = mysql.connector.connect(
