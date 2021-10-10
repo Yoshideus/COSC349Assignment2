@@ -26,22 +26,20 @@ def lbreport(db):
 
     dbcursor.execute("SELECT * FROM stats")
 
-    scores = []
+    scores = [[]]
 
-    result = dbcursor.fetchall()
+    i = 0
+    result = mycursor.fetchall()
     for row in result:
         arr = [row[0], row[5], row[6]]
         scores.append(arr)
-
-    scores.sort(key=lambda x: -x[2])
-    scores.sort(key=lambda x: -x[1])
-
-    i = 0
-    print("Leaderboard Report:")
-    print("{: <8} {: <8} {: <8}".format("Rank", "Score", "Winrate"))
-    for row in scores:
         i += 1
-        print("{: <8} {: <8} {: <8}".format(*row))
+
+    scores.sort(key=lambda x: (-x[1], -x[2]))
+
+    print("Leaderboard Report:")
+    print(scores)
+    return
 
 def gamesreport(db):
 
@@ -49,16 +47,18 @@ def gamesreport(db):
 
     dbcursor.execute("SELECT * FROM games")
 
-    result = dbcursor.fetchall()
+    result = mycursor.fetchall()
 
     i = 0
     for row in result:
         i += 1
 
     print("Games Report:")
-    print("There are "+str(i)+" games going on currently.")
+    print("There are "+i+" games going on currently.")
     for row in result:
-        print(str(row[1])+" is playing "+ str(row[2]) +". "+str(row[3])+" turn has been taken and it's "+str(row[4])+"'s turn next.")
+        print(str(row[1])+" is playing "+ str(row[2]) +". It's turn "+str(row[3])+" and it's "+str(row[4])+"'s turn next.")
+
+    return
 
 # def updatereport(db):
 #     print("Updating report database to match current database...")
