@@ -1,3 +1,7 @@
+CREATE DATABASE tictactoe;
+
+USE tictactoe;
+
 CREATE TABLE users (username varchar(200) NOT NULL, password varchar(60) NOT NULL, PRIMARY KEY (username));
 
 CREATE TABLE games (
